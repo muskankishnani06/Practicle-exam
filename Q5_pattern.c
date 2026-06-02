@@ -2,18 +2,20 @@
 
 int main()
 {
-    for (int i = 10; i >= 6; i--)
+    int n = 10;
+
+    for (int i = n; i >= 6; i--)
     {
-        for (int j = 10; j > i; j--)
+
+        for (int s = i; s > 6; s--)
         {
-            printf(" ");
+            printf("    ");
         }
 
-        for (int k = i; k <= 10; k++)
+        for (int j = i; j <= n; j++)
         {
-            printf("%d", k);
+            printf("%2d  ", j);
         }
-
         printf("\n");
     }
 
